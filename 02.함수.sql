@@ -350,7 +350,7 @@ SELECT ROUND( AVG(SALARY) ) FROM EMPLOYEE;
 /* 1 */ FROM EMPLOYEE
 /* 2 */ WHERE DEPT_CODE = 'D9';
 
--- MIN(컬렴명) : 최소값
+-- MIN(컬럼명) : 최소값
 -- MAX(칼럼명) : 최대값
 --> 타입 제한 없음 : 대/소, 날짜 : 과거/미래, 문자열 : 문자 순서)
 
