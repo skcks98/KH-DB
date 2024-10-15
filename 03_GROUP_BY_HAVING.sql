@@ -69,7 +69,7 @@ SELECT   DECODE(SUBSTR(EMP_NO, 8, 1), '1', '남', '2', '여') 성별,
 COUNT(*) "인원 수",
 SUM(SALARY) "급여 합"
 FROM EMPLOYEE
-GROUP BY DECODE(SUBSTR(EMP_NO, 8, 1), '1', '남', '2', '여') -- 별칭 사용 X (SELECT 해석 X)
+GROUP BY DECODE(SUBSTR(EMP_NO, 8, 1), '1', '남', '2', '여')  -- 별칭 사용 X (SELECT 해석 X)
 ORDER BY "인원 수"; -- 별칭 사용 가능 - (SELECT 절 해석 완료)
 
 -------------------------------------------------------------------------------------------
@@ -244,8 +244,4 @@ WHERE SALARY > 3000000;
 SELECT EMP_ID, EMP_NAME FROM EMPLOYEE
 UNION
 SELECT DEPT_ID, DEPT_TITLE FROM DEPARTMENT;
-
-
-
-
 

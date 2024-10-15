@@ -288,7 +288,7 @@ FROM EMPLOYEE;
 -- 비교하고자 하는 값 또는 컬럼이 조건식과 같으면 결과 값 반환
 
 -- 직원의 성별 구하기
-SELECT EMP_NAME, DECODE( (SUBSTR(EMP_NO, 8, 1), '1', '남성', '2', '여성' )) 성별
+SELECT EMP_NAME, DECODE( (SUBSTR(EMP_NO, 8, 1), '1', '남성', '2', '여성' )) '성별'
 FROM EMPLOYEE;
 
 
